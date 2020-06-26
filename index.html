@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    
+    <div class="calculator">
+        <form action="#">
+            <input class="textview">
+        </form>
+        <table>
+            <tr>
+                <td><input class="button" type="button" value="c" onclick="clearAll()"></td>
+                <td><input class="button" type="button" value="<" onclick="backSpace()"></td>
+                <td><input class="button" type="button" value="/" onclick="insert(this.value)"></td>
+                <td><input class="button" type="button" value="*" onclick="insert(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="7" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="8" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="9" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="-" onclick="insert(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="4" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="5" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="6" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="+" onclick="insert(this.value)"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button" value="1" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="2" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="3" onclick="insert(this.value)"></td>
+                <td rowspan="2"><input style="height: 107px;" type="button" class="button" value="=" onclick="equal()"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input style="width: 110px;" type="button" class="button" value="0" onclick="insert(this.value)"></td>
+                <td><input type="button" class="button" value="." onclick="insert(this.value)"></td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>
